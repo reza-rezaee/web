@@ -1,0 +1,52 @@
+.card {
+    width: 250px;
+    height: 350px;
+    background: #000000;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+   
+  }
+  
+  .card h2 {
+    z-index: 1;
+    color: rgb(0, 0, 0);
+    font-size: 3em;
+    
+  }
+  a{
+    text-decoration: none;
+  }
+
+  
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    background:#687dc4;
+    
+    inset: 5px;
+    border-radius: 15px;
+  }
+  .card-container {
+    display: flex;
+    justify-content: space-between; /* کارت‌ها را روبروی هم قرار دهید */
+    margin-top: 150px;
+    padding: 150px;
+    
+    }
+
+  

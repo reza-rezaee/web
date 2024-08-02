@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../static/del.css" />
+    <link rel="stylesheet" href="../static/code.css" />
+
+    <style>
+      /* استایل نوار بالا */
+      
+      .custom-button {
+        background-color: #dadbe8;
+        border: none;
+        color: rgb(1, 1, 1);
+        padding: 10px 20px;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        position: fixed;
+        top: 20px;
+        left: 100px;
+      }
+      
+      /* Darker background on hover */
+      .custom-button:hover {
+        background-color: #ecf3ed;
+        color: rgb(14, 41, 139);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="input">
+      <button class="value">
+        <svg fill="none" viewBox="0 0 32 18"></svg>
+        <h2><a style="text-decoration: none;" href="sar.html">درباره ما</a></h2>
+      </button>
+      <button class="value">
+        <svg fill="none" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg"></svg>
+        <h2><a style="text-decoration: none;" href="sar.html">ارتباط با ما</a></h2>
+      </button>
+      <button class="value">
+        <svg id="svg8" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+          <g id="layer1" transform="translate(-33.022 -30.617)"></g>
+        </svg>
+        <h2><a style="text-decoration: none;" href="sar.html">اخبار</a></h2>
+      </button>
+      <button class="value">
+        <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"></svg>
+        <h2><a style="text-decoration: none;" href="sar.html">اساتید و مشاوران</a></h2>
+      </button>
+      <button class="value">
+        <svg id="Line" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"></svg>
+        <h2><a style="text-decoration: none;" href="sar.html">ورود/ثبت نام</a></h2>
+      </button>
+      <button class="value">
+        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" data-name="Layer 2"></svg>
+        <h2><a style="text-decoration: none;" href="index.html">خانه‌</a></h2>
+      </button>
+    </div>
+    <script>
+      // وقتی کاربر صفحه را اسکرول می‌کند، تابع myFunction فراخوانی شود
+      window.onscroll = function () {
+        myFunction()
+      }
+      
+      // گرفتن عنصر نوار بالا
+      var navbar = document.getElementById('navbar')
+      
+      // گرفتن موقعیت افست نوار بالا
+      var sticky = navbar.offsetTop
+      
+      // اضافه کردن کلاس "sticky" به نوار بالا وقتی به موقعیت اسکرول می‌رسد
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add('sticky')
+        } else {
+          navbar.classList.remove('sticky')
+        }
+      }
+    </script>
+
+     
+  </body>
+</html>

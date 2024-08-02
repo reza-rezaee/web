@@ -1,0 +1,26 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* راست به چپ */
+    display: flex;
+    flex-direction:column; /* این باعث می‌شود که فوتر در پایین صفحه باشد */
+    /* min-height: 100vh; این برای پر کردن ارتفاع صفحه مطمئن می‌شود */
+}
+
+main {
+    flex: 1; /* این می‌کند که بخش اصلی تا آخرین فضا در ارتفاع رشد کند */
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: -30rem;
+   
+}
+

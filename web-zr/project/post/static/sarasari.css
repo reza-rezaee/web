@@ -1,0 +1,110 @@
+
+
+/* استایل‌های پایه */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative; /* کانتینر اصلی را به نسبت موقعیتش قرار دهید */
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center; /* تراز کردن محتوا در مرکز */
+    align-items: center;
+}
+
+
+.sidebar {
+    position: absolute;
+    top: 200px;
+    left: 60px;
+    width: 250px;
+    height: 400px;
+    background-color: #d233e7;
+    padding: 10px; /* تغییر این مقدار برای تغییر فضای داخلی */
+    border-radius: 5px;
+    text-align: center; /* تراز متن در مرکز */
+}
+
+.sidebar h1 {
+    margin-bottom: 70px; /* فاصله بین عنوان و محتوای بعدی */
+    font-size: 35px; /* اندازه فونت عنوان */
+}
+
+.sidebar a {
+    display: block; /* نمایش هر لینک در خط جدید */
+    margin-bottom: 50px; /* فاصله بین لینک‌ها */
+    color: #333; /* رنگ لینک‌ها */
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none; /* حذف خط زیر لینک‌ها */
+}
+a:link {
+    color: rgb(255, 255, 255); /* رنگ لینک‌های بازدید نشده */
+    text-decoration: none; /* حذف خط زیر لینک */
+  }
+  a:visited {
+    color: rgb(255, 255, 255); /* رنگ لینک‌های بازدید شده */
+    background-color: transparent; /* پس‌زمینه شفاف */
+    text-decoration: none; /* حذف خط زیر لینک */
+  }
+
+
+.content {
+    position: absolute; /* موقعیت مطلق برای کنترل مستقل */
+    bottom: 20px; /* فاصله از پایین */
+    right: 20px; /* فاصله از راست */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.buttons {
+    position: absolute; /* موقعیت مطلق برای کنترل مستقل */
+    bottom: 10px;
+    left: -200px; /* قرارگیری در نیمه صفحه */
+    transform: translateX(-50%); /* تراز مرکزی دکمه‌ها بر اساس نقطه وسط */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    height: 145px;
+    width: 25px;
+   
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+button {
+    padding: 30px 30px; /* افزایش فاصله داخلی */
+    font-size: 20px; /* اندازه فونت بزرگتر */
+    background-color: #ad5ac4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 50px;
+}
+button {
+    width: 250px; /* عرض دکمه */
+    height: 250px; /* ارتفاع دکمه */
+}
+
+
+button:hover {
+    background-color: #c5389b; /* تغییر رنگ دکمه هنگام هاور */
+}
+
+
+

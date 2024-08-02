@@ -1,0 +1,56 @@
+
+
+/* استایل‌های پایه */
+
+.buttons {
+    position:absolute; /* موقعیت مطلق برای کنترل مستقل */
+    bottom: 10px;
+    left: 450px; /* قرارگیری در نیمه صفحه */
+    transform: translateX(-50%); /* تراز مرکزی دکمه‌ها بر اساس نقطه وسط */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    height:610px;
+    width: 25px;
+   
+}
+a:link,
+a:visited {
+    color: #ffffff; /* رنگ متن لینک‌ها */
+    text-decoration: none; /* حذف خط زیر لینک */
+}
+
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+button {
+    padding: 30px 30px; /* افزایش فاصله داخلی */
+    font-size: 20px; /* اندازه فونت بزرگتر */
+    background-color: #ad5ac4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 50px;
+}
+button {
+    width: 250px; /* عرض دکمه */
+    height: 250px; /* ارتفاع دکمه */
+}
+
+
+button:hover {
+    background-color: #c5389b; /* تغییر رنگ دکمه هنگام هاور */
+}
+
+
+

@@ -1,0 +1,23 @@
+ {% extends 'index.html' %}
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    {% block body %}
+    <h1></h1>
+    {% if last_post %}
+    
+    <ul>
+        {% for post in last_post %}
+         <!-- <li><a href="{{post.id}}">{{post.slug}}</a></li>  -->
+        <li><a href="{% url 'post:detail' post.id %}">{{post.slug}}</a></li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p></p>
+    {% endif %}
+    {% endblock %}
+</body>
+<footer>
+
+</footer> 

@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.box {
+    width: 30%; /* تغییر عرض کادرها به دلخواه */
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.box h2 {
+    margin-top: 0;
+}
+
+.box img {
+    width: 50px; /* تغییر اندازه تصویر کوچولو به دلخواه */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

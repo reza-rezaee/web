@@ -1,0 +1,13 @@
+.logo {
+    position: fixed; 
+    top: 250px; 
+    right: 250px; 
+    z-index: 999; 
+    width: 5px; 
+    height: auto; 
+    cursor: pointer; 
+    src:"./images/del.png"
+}
+
+    
+    

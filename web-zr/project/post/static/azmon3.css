@@ -1,0 +1,103 @@
+
+@font-face {
+    font-family: Shabnam;
+    src: url("./fonts/Shabnam-FD.woff2") format("woff2");
+}
+body {    
+    background-color: #fafafa;
+    font-family: "Shabnam";
+}
+.container {
+    width: 1012px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 56px;
+}
+.title {
+    display: flex;
+    gap: 6px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.link {
+    text-decoration: none;
+    color: rgb(221, 221, 230);
+}
+
+.icon {
+    width: 20px;
+    color: blue;
+}
+h4 {
+    display: inline-block;
+}
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 24px;
+}
+.item1, 
+.item2,
+.item3,
+.item4
+{
+    display: inline-block;
+    box-shadow: 1px 1px 10px black;
+    padding: 15px;
+    background-color: #fff;
+}
+img {
+    width: 100%;
+}
+.text {
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    height: 58px;
+    font-size: small;
+    text-align: justify;
+}
+.persent {
+    margin-right: 10px;
+    padding: 3px;
+    color: rgb(47, 47, 197);
+    background-color: aqua;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+}
+b {
+    margin-right: 10px;
+}
+.lastprice {
+    display: inline-block;
+    text-decoration: line-through;
+    color: gray;
+}
+.starprice {
+    display: flex;
+    justify-content: space-between;
+}
+.star {
+    width: 20px;
+    color: gold;
+    margin-left: 10px;
+    margin-bottom: -5px; 
+}
+.rate {
+    display: inline-block;
+    margin-left: -3px;
+    margin-top: -10px;
+    font-size: small;
+    color: grey;
+}
+span {
+    font-weight: 400;
+    margin-right: 5px;
+}
